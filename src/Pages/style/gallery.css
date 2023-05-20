@@ -1,18 +1,27 @@
+.gallery .gallery--container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
 
-.mySwiper .heading {
+ 
+
+.gallery  .heading {
     padding: 3rem 0;
     text-align: center;
     font-size: var(--big-font-size);
 }
 
-.mySwiper .heading span {
+.gallery .heading span {
       color: var(--main-color-alt);
 }
 
 
-.mySwiper img{
-    max-width: 10%;
-    height: 50%;
+.gallery .gallery--container .content img{
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
+    border-radius: 1rem;
 }
 
