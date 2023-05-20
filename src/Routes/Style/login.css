@@ -1,0 +1,76 @@
+.login{
+     height: 100vh;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+
+.login .form {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10rem;
+    position: relative;
+}
+
+.login .form h3 {
+    font-size: var(--big-font-size);
+}
+
+
+.login .form input {
+    margin-top: 2rem;
+    border: none;
+    border: .1rem solid rgb(240, 226, 226);
+    width: 100%;
+    padding: 2rem 1rem;
+    border-radius: .5rem;
+
+}
+
+/* .login .form .form-control{
+
+    position: relative;
+} */
+
+.login .form .pass{
+position: absolute;
+right: 13rem;
+top: 27rem;
+cursor: pointer;
+font-size: var(--h3-font-size);
+}
+
+
+.login .form p {
+    font-size: var(--h3-font-size);
+    padding: .5rem 0;
+    font-weight: var(--font-medium);
+    color: var(--main-color-alt);
+}
+
+
+.login .form button{
+    margin-top: 2rem;
+}
+
+.login .form .google{
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.login .form .google  h4{
+    margin-top: 3rem;
+   font-size: var(--h1-font-size);
+    padding: 1rem 0;
+
+}
+
+.login .form .google span {
+    font-size: var(--h1-font-size);
+
+padding: 1.5rem;
+border-radius: 10rem;
+cursor: pointer;
+}
+

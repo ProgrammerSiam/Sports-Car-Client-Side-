@@ -1,0 +1,18 @@
+
+.mySwiper .heading {
+    padding: 3rem 0;
+    text-align: center;
+    font-size: var(--big-font-size);
+}
+
+.mySwiper .heading span {
+      color: var(--main-color-alt);
+}
+
+
+.mySwiper img{
+    max-width: 10%;
+    height: 50%;
+    object-fit: cover;
+}
+

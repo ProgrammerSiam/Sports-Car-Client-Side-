@@ -1,0 +1,86 @@
+/*=============== HEADER RESPONSIVE START HERE ===============*/
+
+
+/* =============== X LARGE DEVICE RESPONSIVE START HERE =============== */
+@media (max-width: 1200px) {
+      header {
+          padding: 2rem 2rem;
+      }
+}
+
+
+
+
+/*=============== LARGE DEVICE RESPONSIVE START HERE ===============*/
+@media (max-width: 992px) {
+    html {
+        font-size: 55%;
+        /* scroll-padding-top: 7rem; */
+    }
+
+    header {
+        padding: 2rem 2rem;
+
+    }
+
+    /* header .header--link{
+        position:absolute;
+        margin-top: 100%;
+        display: flex;
+        flex-direction: column;
+        background: #d32a2a;
+        width: 30rem;
+        right: -100%;
+
+
+    }
+ header .header--link.active{
+right: 0;
+ } */
+
+
+    /* .header--profile #mobile {
+        display: block;
+        padding: 2rem;
+        font-size: 2rem;
+        cursor: pointer;
+    } */
+
+
+
+
+    
+}
+
+
+
+
+
+/*=============== MEDIUM DEVICE RESPONSIVE START HERE ===============*/
+@media (max-width: 768px) {}
+
+
+
+/*=============== SMALL DEVICE RESPONSIVE START HERE ===============*/
+@media (max-width: 576px) {
+    html {
+        font-size: 50%;
+    }
+
+    header {
+        padding: 3rem;
+    }
+}
+
+
+
+/*=============== X SMALL DEVICE RESPONSIVE START HERE ===============*/
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    header {
+        padding: 3rem;
+    }
+}

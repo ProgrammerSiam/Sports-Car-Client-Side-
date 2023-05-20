@@ -1,0 +1,23 @@
+.error {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error p {
+    font-size: var(--h2-font-size);
+    padding: 1rem 0;
+}
+
+.error p span {
+    font-weight: var(--font-semi-bold);
+    color: var(--main-color-alt);
+    font-size: var(--big-font-size);
+}
+
+.error .button {
+
+    margin-top: 1rem;
+}

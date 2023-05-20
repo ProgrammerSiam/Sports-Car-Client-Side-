@@ -1,0 +1,63 @@
+/*=============== header styling start here ===============*/
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 10%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 2rem 10%;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+
+}
+
+.header--title .link {
+    display: flex;
+    align-items: center;
+    font-size: var(--big-font-size);
+    color: var(--dark-color);
+
+}
+
+.header--title .link span {
+    color: var(--main-color);
+}
+
+
+
+
+.header--link {
+    display: flex;
+}
+
+.header--link .link {
+    margin-right: 2rem;
+    font-size: var(--h2-font-size);
+
+}
+
+.header--link .link li a {
+    font-weight: var(--font-medium);
+    margin-right: 2rem;
+    color: var(--dark-color-alt);
+}
+
+
+
+
+.header--profile {
+    display: flex;
+    align-items: center;
+}
+
+.header--profile .user {
+    font-size: var(--h1-font-size);
+    margin-left: 1rem;
+}

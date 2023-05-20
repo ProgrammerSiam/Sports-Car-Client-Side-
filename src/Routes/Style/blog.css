@@ -1,0 +1,38 @@
+.blog {
+
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.blog h3 {
+    font-size: var(--big-font-size);
+    padding: 2rem 0;
+}
+
+.faq-item {
+    padding: 1rem 0;
+    font-size: var(--h1-font-size);
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.question {
+    font-weight: var(--font-semi-bold);
+}
+
+.answer {
+    margin-top: 1rem;
+    padding-left: 1rem;
+    font-size: var(--h2-font-size);
+    border-left: .5rem solid #d41111;
+    display: none;
+}
+
+.faq-item.expanded .answer {
+    display: block;
+}
