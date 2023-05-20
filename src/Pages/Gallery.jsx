@@ -1,10 +1,11 @@
 import React from "react";
 import "./style/gallery.css";
 
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/css";
-// import "swiper/swiper-bundle.min.css";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/swiper-bundle.min.css";
+// import required modules
+import { Autoplay, Pagination, Navigation } from "swiper";
 
 export default function Gallery() {
   return (
@@ -71,32 +72,35 @@ export default function Gallery() {
         our <span>gallery</span>
       </h3>
 
-      <div className="gallery--container">
-        <div className="content">
+      <Swiper
+        spaceBetween={10}
+        centeredSlides={true}
+        autoplay={{
+          delay: 1000,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="gallery--container"
+      >
+        <SwiperSlide className="content">
           <img
             src={"https://i.ibb.co/mRjRtcF/pexels-philbert-pembani-3991204.jpg"}
             alt=""
           />
-        </div>
-
-        <div className="content">
+        </SwiperSlide>
+        <SwiperSlide className="content">
           <img
-            src={
-              "https://i.ibb.co/3MYZ8kC/pexels-claiton-luis-moraes-12720687.jpg"
-            }
+            src={"https://i.ibb.co/mRjRtcF/pexels-philbert-pembani-3991204.jpg"}
             alt=""
           />
-        </div>
-
-        <div className="content">
+        </SwiperSlide>{" "}
+        <SwiperSlide className="content">
           <img
-            src={
-              "https://i.ibb.co/3MYZ8kC/pexels-claiton-luis-moraes-12720687.jpg"
-            }
+            src={"https://i.ibb.co/mRjRtcF/pexels-philbert-pembani-3991204.jpg"}
             alt=""
           />
-        </div>
-      </div>
+        </SwiperSlide>
+      </Swiper>
     </section>
   );
 }
