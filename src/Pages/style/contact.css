@@ -26,6 +26,7 @@
 }
 
 .contact .row form {
+/* margin-bottom: 2rem; */
     padding: 2rem;
     flex: 1 1 42rem;
     box-shadow: var(--box-shadow);
@@ -39,6 +40,7 @@
     color: var(--dark-color);
     padding-bottom: 1rem;
 }
+
 
 .contact .row form .box {
     width: 100%;
