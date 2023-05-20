@@ -4,6 +4,7 @@ import Featured from "../Pages/Featured";
 import Null from "../Pages/Null";
 import Banner from "../Pages/Banner";
 import Gallery from "../Pages/Gallery";
+import Contact from "../Pages/Contact";
 
 export default function Main() {
   return (
@@ -13,6 +14,7 @@ export default function Main() {
       <Null />
       <Services />
       <Featured />
+      <Contact/>
     </>
   );
 }
