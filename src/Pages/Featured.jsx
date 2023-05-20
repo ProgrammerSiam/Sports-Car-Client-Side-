@@ -35,7 +35,7 @@ export default function Featured() {
                 <FaStarHalfAlt />
               </i>
             </div>
-            <div className="price">$55,000/-</div>
+            <div className="price">$50,000/-</div>
             <a href="#" className="button">
               check out
             </a>
@@ -95,7 +95,7 @@ export default function Featured() {
                 <FaStarHalfAlt />
               </i>
             </div>
-            <div className="price">$55,000/-</div>
+            <div className="price">$60,000/-</div>
             <a href="#" className="button">
               check out
             </a>
@@ -127,7 +127,7 @@ export default function Featured() {
                 <FaStarHalfAlt />
               </i>
             </div>
-            <div className="price">$55,000/-</div>
+            <div className="price">$75,000/-</div>
             <a href="#" className="button">
               check out
             </a>
@@ -157,7 +157,7 @@ export default function Featured() {
                 <FaStarHalfAlt />
               </i>
             </div>
-            <div className="price">$55,000/-</div>
+            <div className="price">$35,000/-</div>
             <a href="#" className="button">
               check out
             </a>
@@ -187,7 +187,7 @@ export default function Featured() {
                 <FaStarHalfAlt />
               </i>
             </div>
-            <div className="price">$55,000/-</div>
+            <div className="price">$85,000/-</div>
             <a href="#" className="button">
               check out
             </a>

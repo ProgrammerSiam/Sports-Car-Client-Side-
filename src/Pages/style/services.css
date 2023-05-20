@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     gap: 2rem;
+
 }
 
 .services .heading {
@@ -25,6 +26,8 @@
     box-shadow: var(--box-shadow);
     border: var(--border);
     text-align: center;
+    
+  
 }
 
 .services .box-container .box i {
@@ -36,6 +39,7 @@
     margin-bottom: 1rem;
     background: var(--yellow);
     color: var(--black);
+  ;
 }
 
 .services .box-container .box h3 {
