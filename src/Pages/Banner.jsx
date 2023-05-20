@@ -12,7 +12,7 @@ export default function Banner() {
 
   return (
     <section className="home" id="home">
-      <Swiper grabCursor={true}  className="swiper_container">
+      <Swiper grabCursor={true} className="swiper_container">
         <SwiperSlide className="slide">
           <div className="swiper-slide">
             <div
@@ -29,12 +29,13 @@ export default function Banner() {
             >
               <div className="content">
                 <h3 data-aos="fade-up" data-aos-delay={150}>
-                  exploring
+                  Welcome to Spot Mini Car
                 </h3>
                 <p data-aos="fade-up" data-aos-delay={300}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Impedit unde ex molestias soluta consequatur saepe aliquam,
-                  excepturi delectus consequuntur minus!
+                  At Spot Mining Car, we understand the demands and challenges
+                  faced by the mining industry. That's why we're dedicated to
+                  providing top-notch mining vehicle solutions tailored to your
+                  specific needs.
                 </p>
                 <a
                   data-aos="fade-up"
@@ -68,12 +69,13 @@ export default function Banner() {
             >
               <div className="content">
                 <h3 data-aos="fade-up" data-aos-delay={150}>
-                  exploring
+                  Welcome to Spot Mini Car
                 </h3>
                 <p data-aos="fade-up" data-aos-delay={300}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Impedit unde ex molestias soluta consequatur saepe aliquam,
-                  excepturi delectus consequuntur minus!
+                  At Spot Mining Car, we understand the demands and challenges
+                  faced by the mining industry. That's why we're dedicated to
+                  providing top-notch mining vehicle solutions tailored to your
+                  specific needs.
                 </p>
                 <a
                   data-aos="fade-up"
