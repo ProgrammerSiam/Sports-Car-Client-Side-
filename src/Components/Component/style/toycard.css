@@ -7,8 +7,6 @@
 
 }
 
-
-
 .category-card .category img {
     max-width: 40%;
     height: auto;
@@ -42,7 +40,7 @@
     color: #776808;
 }
 
-.category-card .category .category--content .button{
-  margin-top: 1rem;
- 
+.category-card .category .category--content .button {
+    margin-top: 1rem;
+
 }

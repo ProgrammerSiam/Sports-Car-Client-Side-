@@ -8,7 +8,6 @@ export default function Services() {
       </h3>
       <div className="box-container">
         <div className="box">
-          <i className="fas fa-car" />
           <h3>car selling</h3>
           <p>
             If you're considering upgrading your mining vehicle fleet or have
@@ -20,9 +19,8 @@ export default function Services() {
           </a>
         </div>
         <div className="box">
-          <i className="fas fa-tools" />
           <h3>parts repair</h3>
-          
+
           <p>
             In the event of component failures or damage to specific parts of
             your mining vehicles, our skilled technicians are experienced in
@@ -33,7 +31,6 @@ export default function Services() {
           </a>
         </div>
         <div className="box">
-          <i className="fas fa-car-crash" />
           <h3>car insurance</h3>
           <p>
             Protecting your mining vehicles and investments is crucial. At Spot
@@ -45,7 +42,6 @@ export default function Services() {
           </a>
         </div>
         <div className="box">
-          <i className="fas fa-car-battery" />
           <h3>battery replacement</h3>
           <p>
             Mining vehicles rely heavily on powerful batteries to operate
@@ -57,7 +53,6 @@ export default function Services() {
           </a>
         </div>
         <div className="box">
-          <i className="fas fa-gas-pump" />
           <h3>oil change</h3>
           <p>
             Proper maintenance and regular oil changes are vital for the smooth
@@ -68,7 +63,6 @@ export default function Services() {
           </a>
         </div>
         <div className="box">
-          <i className="fas fa-headset" />
           <h3>24/7 support</h3>
           <p>
             We understand that mining operations don't adhere to a fixed
