@@ -1,0 +1,21 @@
+.add--toy--list {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    /* width: 80%; */
+    background: #ffffff;
+    border: var(--border);
+    padding: 1rem ;
+    align-items: center;
+}
+
+.add--toy--list h3 {
+    font-size: var(--h3-font-size);
+position: relative;
+}
+
+.add--toy--list .toy--list--btn button {
+
+    margin-right: 1rem;
+    color: black;
+}

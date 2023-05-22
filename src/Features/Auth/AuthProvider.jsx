@@ -17,21 +17,32 @@ export const AuthContext = createContext(null);
 
 export default function AuthProvider({ children }) {
   const auth = getAuth(app);
-  const provider = new GoogleAuthProvider();
+    const googleProvider = new GoogleAuthProvider();
+ 
   // const user={displayName:"mehedi hasan siam"}
-  const [user, setUser] = useState(null);
+
+  const [user, setUser] = useState();
+  const [loading, setLoading] = useState(true);
+
+
+
 
   const createUser = (email, password) => {
     return createUserWithEmailAndPassword(auth, email, password);
   };
 
-  const singupUser = () => {
-    return signInWithPopup(auth, provider);
-  };
 
   const loginUser = (email, password) => {
     return signInWithEmailAndPassword(auth, email, password);
   };
+
+
+ const googleLogin = () => {
+   setLoading(true);
+   return signInWithPopup(auth, googleProvider);
+ };
+
+
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -44,15 +55,20 @@ export default function AuthProvider({ children }) {
   }, []);
 
   const logOut = () => {
+    setLoading(true)
     return signOut(auth);
   };
 
+
+
+
   const authInfo = {
     user,
+    loading,
     createUser,
     loginUser,
     logOut,
-    singupUser,
+    googleLogin,
   };
 
   return (

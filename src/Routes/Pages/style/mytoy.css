@@ -1,0 +1,29 @@
+.my--toy {
+    /* height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; */
+    margin: 10rem 0;
+}
+
+.my--toy .heading {
+    padding: 4rem 0;
+    text-align: center;
+    font-size: var(--big-font-size);
+}
+
+.my--toy .my--toy--content .content {
+    /* padding: 2rem;
+    font-size: var(--h1-font-size);
+    background: pink; */
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.my--toy .my--toy--content .content h3 {
+    font-size: var(--h1-font-size);
+
+}

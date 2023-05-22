@@ -18,6 +18,7 @@ header {
 
 }
 
+
 .header--title .link {
     display: flex;
     align-items: center;
@@ -57,10 +58,45 @@ header {
     align-items: center;
 }
 
+.header--profile .user img{
+    width: 65%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5rem;
+
+
+   
+
+}
+.header--profile .user .tooltiptext{
+   visibility: hidden;
+   width: 120px;
+   background-color: black;
+   color: #fff;
+   text-align: center;
+   border-radius: 6px;
+   padding: 5px 0;
+
+
+   position: absolute;
+   z-index: 1;
+}
+
+.header--profile .user:hover .tooltiptext{
+
+      visibility: visible;
+
+}
+
+
+
+
 .header--profile .user {
     font-size: var(--h1-font-size);
     margin-left: 1rem;
 }
-.header--profile #mobile{
+
+
+/* .header--profile #mobile{
     display: none;
-}
+} */

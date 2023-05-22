@@ -1,0 +1,40 @@
+.all--toy .heading {
+    margin-top: 10rem;
+    text-align: center;
+    padding: 2rem 0;
+     font-size: var(--big-font-size);
+}
+
+.all--toy .search--toy {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.all--toy .search--toy input{
+    border: none;
+    padding: 1rem;
+    border: var(--border);
+    margin-right: 2rem;
+}
+
+
+
+.all--toy .toy--content {
+
+    /* height: 100vh;  */
+     /* width: 90%; */
+    flex-direction: column;
+    display: flex;
+    /* justify-content: flex-start; */
+    /* text-align: start; */
+}
+
+.all--toy .toy--content .content {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.all--toy .toy--content .content h3{
+    font-size: var(--h1-font-size);
+}

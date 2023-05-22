@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Style/header.css";
 import "./Style/responsive.css";
 
-import { FaCarCrash, FaUsers, FaUserCircle, FaStream } from "react-icons/fa";
+import { FaCarCrash, FaStream } from "react-icons/fa";
+import { AuthContext } from "../Features/Auth/AuthProvider";
 
 export default function Header() {
+  const { user, logOut } = useContext(AuthContext);
+  const handleLogOut = () => {
+    logOut();
+  };
+
   return (
     <header>
+
+      
       <div className="header--title">
         <Link to="/" className="link">
           <FaCarCrash />
@@ -20,44 +28,56 @@ export default function Header() {
       <div className="header--link">
         <NavLink exact to="/" className="link" activeClassName="active">
           <li>
-            <a href="#">Home</a>
+            <a href="#">home</a>
           </li>
         </NavLink>
 
-        <NavLink to="/about" className="link" activeClassName="active">
+        <NavLink to="/allToys" className="link" activeClassName="active">
           <li>
-            <a href="#">About</a>
+            <a href="#">All Toys</a>
           </li>
         </NavLink>
 
-        <NavLink to="/services" className="link" activeClassName="active">
+        <NavLink to="/addtoys" className="link" activeClassName="active">
           <li>
-            <a href="#">Services</a>
+            <a href="#">Add a Toy</a>
+          </li>
+        </NavLink>
+
+        <NavLink to="/blog" className="link" activeClassName="active">
+          <li>
+            <a href="#">blog</a>
           </li>
         </NavLink>
 
         <NavLink to="/contact" className="link" activeClassName="active">
           <li>
-            <a href="#">Contact</a>
+            {user ? (
+              <>
+                <Link to="/mytoys">My Toys</Link>
+                <Link onClick={handleLogOut}>Log Out</Link>
+              </>
+            ) : (
+              <Link to="/login">Login</Link>
+            )}
           </li>
         </NavLink>
       </div>
 
       <div className="header--profile">
-        <a href="#" className="button button--flex">
-          Login
-          <span className="button__icon">
-            <FaUsers />
-          </span>
-        </a>
-        <span className="user">
-          <FaUserCircle />
-        </span>
+        {user && (
+          <div className="user" data-tip={user.email}>
+            <img src={user.photoURL} alt="" />
+            <span class="tooltiptext">{user.displayName}</span>
+          </div>
+        )}
 
-        <span id="mobile">
+        {/* <span id="mobile">
           <FaStream />
-        </span>
+        </span> */}
       </div>
+
+
     </header>
   );
 }

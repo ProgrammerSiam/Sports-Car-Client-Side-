@@ -5,13 +5,14 @@ import Null from "../Pages/Null";
 import Banner from "../Pages/Banner";
 import Gallery from "../Pages/Gallery";
 import Contact from "../Pages/Contact";
+import ToysByCategory from './../Components/Component/ToysByCategory/ToysByCategory';
 
 export default function Main() {
   return (
     <>
       <Banner />
       <Gallery/>
-      <Null />
+    <ToysByCategory/>
       <Services />
       <Featured />
       <Contact/>

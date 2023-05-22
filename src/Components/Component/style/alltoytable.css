@@ -1,0 +1,18 @@
+.toy--table .table--content{
+    display: flex;
+    justify-content: space-between;
+    /* width: 80%; */
+background: #ffffff;
+border: var(--border);
+padding: 1rem;
+align-items: center;
+
+}
+
+.toy--table .table--content h3{
+      font-size: var(--h3-font-size);
+}
+
+.toy--table .table--content .link{
+    color: #fff;
+}

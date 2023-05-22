@@ -24,34 +24,34 @@
 }
 
 .featured .featured--container .box img {
-   max-width: 100%;
+    max-width: 100%;
     height: 60%;
     object-fit: cover;
 }
 
-.featured .featured--container .box:hover img{
+.featured .featured--container .box:hover img {
     transform: scale(.9);
     border-radius: 1rem;
 }
 
-.featured .featured--container .box .content h3{
-font-size: var(--h1-font-size);
-color: var(--dark-coloe);
-padding: 1rem 0;
+.featured .featured--container .box .content h3 {
+    font-size: var(--h1-font-size);
+    color: var(--dark-coloe);
+    padding: 1rem 0;
 }
 
-.featured .featured--container .box .content .stars{
-font-size: var(--h2-font-size);
-padding: .5rem 0;
-color: #776808;
+.featured .featured--container .box .content .stars {
+    font-size: var(--h2-font-size);
+    padding: .5rem 0;
+    color: #776808;
 }
 
 
-.featured .featured--container .box .content .price{
-padding: 1rem 0;
-font-size: var(--h1-font-size);
+.featured .featured--container .box .content .price {
+    padding: 1rem 0;
+    font-size: var(--h1-font-size);
 }
 
-.featured .featured--container .box .content .button{
-margin-bottom: 1rem;
+.featured .featured--container .box .content .button {
+    margin-bottom: 1rem;
 }

@@ -52,3 +52,55 @@ margin-top: 9rem;
     color: var(--dark-color);
     padding: 1rem 0px;
 }
+
+
+
+
+
+
+
+/*=============== LARGE DEVICE RESPONSIVE START HERE ===============*/
+@media (max-width: 992px) {
+ .home .box {
+
+     background-size: cover !important;
+   
+ }
+}
+
+
+/*=============== MEDIUM DEVICE RESPONSIVE START HERE ===============*/
+@media (max-width: 768px) {
+
+    .home .box {
+      
+        background-position: left !important;
+      
+    }
+}
+
+
+
+/*=============== SMALL DEVICE RESPONSIVE START HERE ===============*/
+@media (max-width: 576px) {
+    html {
+        font-size: 50%;
+    }
+
+    .header {
+        padding: 3rem;
+    }
+}
+
+
+
+/*=============== X SMALL DEVICE RESPONSIVE START HERE ===============*/
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .header {
+        padding: 3rem;
+    }
+}

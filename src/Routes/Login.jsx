@@ -13,7 +13,7 @@ import { AuthContext } from "./../Features/Auth/AuthProvider";
 import { Link } from "react-router-dom";
 
 export default function Login() {
-  const { loginUser, singupUser } = useContext(AuthContext);
+  const { loginUser, googleLogin } = useContext(AuthContext);
   const [error, setError] = useState("");
   const [type, setType] = useState("password");
   const [icon, setIcon] = useState(FaEyeSlash);
@@ -45,15 +45,13 @@ export default function Login() {
 
   //sin
 
-  const singup = () => {
-    singupUser()
+  const handleGoogleLogin = () => {
+    console.log("active google");
+    googleLogin()
       .then((result) => {
-        const user = result.user;
-        console.log(user);
+        console.log(result.user);
       })
-      .catch((error) => {
-        console.log(error.message);
-      });
+      .catch((err) => console.log(err));
   };
 
   //show/hidden password
@@ -142,7 +140,7 @@ export default function Login() {
 
         <div className="google">
           <h4>Google Sign-in</h4>
-          <span className="icon" onClick={singup()}>
+          <span className="icon" onClick={handleGoogleLogin}>
             <FaGoogle />
           </span>
         </div>
