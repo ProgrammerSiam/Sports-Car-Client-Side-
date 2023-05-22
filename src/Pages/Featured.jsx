@@ -7,7 +7,7 @@ export default function Featured() {
   return (
     <section className="featured" id="featured">
       <h1 className="heading">
-        featured <span>cars</span>
+        our <span>gallery</span>
       </h1>
 
       <div className="featured--container">
@@ -16,90 +16,18 @@ export default function Featured() {
             src={"https://i.ibb.co/zhnrL6v/pexels-daniel-158971.jpg"}
             alt=""
           />
-          <div className="content">
-            <h3>new model</h3>
-            <div className="stars">
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-            </div>
-            <div className="price">$50,000/-</div>
-            <a href="#" className="button">
-              check out
-            </a>
-          </div>
         </div>
         <div className="box">
           <img
             src={"https://i.ibb.co/Mfr54vj/pexels-mike-bird-97353.jpg"}
             alt=""
           />
-          <div className="content">
-            <h3>new model</h3>
-            <div className="stars">
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-            </div>
-            <div className="price">$55,000/-</div>
-            <a href="#" className="button">
-              check out
-            </a>
-          </div>
         </div>{" "}
         <div className="box">
           <img
             src={"https://i.ibb.co/4RgBsjh/pexels-markus-spiske-242200.jpg"}
             alt=""
           />
-          <div className="content">
-            <h3>new model</h3>
-            <div className="stars">
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-            </div>
-            <div className="price">$60,000/-</div>
-            <a href="#" className="button">
-              check out
-            </a>
-          </div>
         </div>
         <div className="box">
           <img
@@ -108,90 +36,18 @@ export default function Featured() {
             }
             alt=""
           />
-          <div className="content">
-            <h3>new model</h3>
-            <div className="stars">
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-            </div>
-            <div className="price">$75,000/-</div>
-            <a href="#" className="button">
-              check out
-            </a>
-          </div>
         </div>{" "}
         <div className="box">
           <img
             src={"https://i.ibb.co/XbdG8sP/pexels-mike-bird-381228.jpg"}
             alt=""
           />
-          <div className="content">
-            <h3>new model</h3>
-            <div className="stars">
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-            </div>
-            <div className="price">$35,000/-</div>
-            <a href="#" className="button">
-              check out
-            </a>
-          </div>
         </div>{" "}
         <div className="box">
           <img
             src={"https://i.ibb.co/xj96Vrd/pexels-mike-bird-97355.jpg"}
             alt=""
           />
-          <div className="content">
-            <h3>new model</h3>
-            <div className="stars">
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-            </div>
-            <div className="price">$85,000/-</div>
-            <a href="#" className="button">
-              check out
-            </a>
-          </div>
         </div>
       </div>
     </section>

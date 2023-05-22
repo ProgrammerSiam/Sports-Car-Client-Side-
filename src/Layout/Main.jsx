@@ -11,11 +11,12 @@ export default function Main() {
   return (
     <>
       <Banner />
-      <Gallery/>
-    <ToysByCategory/>
-      <Services />
       <Featured />
-      <Contact/>
+
+      {/* <Gallery/> */}
+      <ToysByCategory />
+      <Services />
+      <Contact />
     </>
   );
 }

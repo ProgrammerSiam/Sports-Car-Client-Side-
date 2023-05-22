@@ -106,3 +106,59 @@ section {
 .outlet {
     min-height: 90vh;
 }
+
+
+
+/* =============== X LARGE DEVICE RESPONSIVE START HERE =============== */
+@media (max-width: 1200px) {}
+
+
+
+
+/*=============== LARGE DEVICE RESPONSIVE START HERE ===============*/
+@media (max-width: 992px) {
+    html {
+        font-size: 55%;
+        /* scroll-padding-top: 7rem; */
+    }
+
+    header {
+        padding: 2rem 2rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+}
+
+
+
+/*=============== MEDIUM DEVICE RESPONSIVE START HERE ===============*/
+@media (max-width: 768px) {}
+
+
+
+/*=============== SMALL DEVICE RESPONSIVE START HERE ===============*/
+@media (max-width: 576px) {
+    html {
+        font-size: 50%;
+    }
+
+    header {
+        padding: 3rem;
+    }
+}
+
+
+
+/*=============== X SMALL DEVICE RESPONSIVE START HERE ===============*/
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    header {
+        padding: 3rem;
+    }
+}
+

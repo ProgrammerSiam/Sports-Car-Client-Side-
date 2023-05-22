@@ -12,6 +12,8 @@ export default function Banner() {
 
   return (
     <section className="home" id="home">
+
+      
       <Swiper grabCursor={true} className="swiper_container">
         <SwiperSlide className="slide">
           <div className="swiper-slide">
@@ -93,6 +95,9 @@ export default function Banner() {
           </div>
         </SwiperSlide>
       </Swiper>
+
+
+
     </section>
   );
 }
