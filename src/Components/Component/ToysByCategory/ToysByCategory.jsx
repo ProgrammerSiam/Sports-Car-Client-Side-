@@ -12,7 +12,6 @@ const ToysByCategory = () => {
     fetch(`http://localhost:5000/toyByCategory/${activeTab}`)
       .then((res) => res.json())
       .then((result) => {
-        console.log(result);
         setSelectcategory(result);
       });
   }, [activeTab]);
@@ -21,11 +20,9 @@ const ToysByCategory = () => {
     <section className="category">
       <div className="heading">
         <h3>
-          {/* You can search Toys By Using this  */}
           Click the category option tab
           <span> Sub-Category</span>
         </h3>
-        {/* <p>Click the category button and show the product</p> */}
       </div>
 
       <div className="category--tab">
