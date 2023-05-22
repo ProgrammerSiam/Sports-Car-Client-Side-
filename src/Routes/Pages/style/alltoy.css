@@ -38,3 +38,10 @@
 .all--toy .toy--content .content h3{
     font-size: var(--h1-font-size);
 }
+
+.all--toy .toy--content  h1{
+position: relative;
+top: 20rem;
+text-align: center;
+font-size: var(--big-font-size);
+}
