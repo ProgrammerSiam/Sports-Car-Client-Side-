@@ -22,31 +22,31 @@ export default function Footer() {
             <i>
               <FaMapMarkerAlt />
             </i>
-            india
+            dhaka
           </a>
           <a href="#">
             <i>
               <FaMapMarkerAlt />
             </i>
-            japan
+            pabna
           </a>
           <a href="#">
             <i>
               <FaMapMarkerAlt />
             </i>
-            france
+            joshor
           </a>
           <a href="#">
             <i>
               <FaMapMarkerAlt />
             </i>
-            russia
+            kushtiya
           </a>
           <a href="#">
             <i>
               <FaMapMarkerAlt />
             </i>
-            USA
+            rajshahi
           </a>
         </div>
         <div className="box">
@@ -61,7 +61,7 @@ export default function Footer() {
             <i>
               <FaAngleRight />
             </i>
-            vehicles
+            blog
           </a>
           <a href="#">
             <i>
@@ -73,13 +73,13 @@ export default function Footer() {
             <i>
               <FaAngleRight />
             </i>
-            featured
+            gallery
           </a>
           <a href="#">
             <i>
               <FaAngleRight />
             </i>
-            reviews
+            category
           </a>
           <a href="#">
             <i>
@@ -94,7 +94,7 @@ export default function Footer() {
             <i>
               <FaPhone />
             </i>
-            +123-456-7890
+            +088-013-101010
           </a>
           <a href="#">
             <i>
@@ -106,13 +106,13 @@ export default function Footer() {
             <i>
               <FaEnvelope />
             </i>
-            shaikhanas@gmail.com
+            example@gmail.com
           </a>
           <a href="#">
             <i>
               <FaMapMarkerAlt />
             </i>
-            mumbai, india - 400104
+            dhaka, bangladesh - 6000
           </a>
         </div>
         <div className="box">
