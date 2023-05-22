@@ -16,33 +16,26 @@ import app from "../Config/firebase.config";
 export const AuthContext = createContext(null);
 
 export default function AuthProvider({ children }) {
+
+  
   const auth = getAuth(app);
-    const googleProvider = new GoogleAuthProvider();
- 
-  // const user={displayName:"mehedi hasan siam"}
+  const googleProvider = new GoogleAuthProvider();
 
   const [user, setUser] = useState();
   const [loading, setLoading] = useState(true);
-
-
-
 
   const createUser = (email, password) => {
     return createUserWithEmailAndPassword(auth, email, password);
   };
 
-
   const loginUser = (email, password) => {
     return signInWithEmailAndPassword(auth, email, password);
   };
 
-
- const googleLogin = () => {
-   setLoading(true);
-   return signInWithPopup(auth, googleProvider);
- };
-
-
+  const googleLogin = () => {
+    setLoading(true);
+    return signInWithPopup(auth, googleProvider);
+  };
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -55,12 +48,9 @@ export default function AuthProvider({ children }) {
   }, []);
 
   const logOut = () => {
-    setLoading(true)
+    setLoading(true);
     return signOut(auth);
   };
-
-
-
 
   const authInfo = {
     user,

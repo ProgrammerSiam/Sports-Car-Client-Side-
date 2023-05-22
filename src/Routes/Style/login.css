@@ -1,9 +1,9 @@
-.login{
-     height: 100vh;
-     width: 100%;
-     display: flex;
-     align-items: center;
-     justify-content: center;
+.login {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -28,17 +28,14 @@
 
 }
 
-/* .login .form .form-control{
 
-    position: relative;
-} */
 
-.login .form .pass{
-position: absolute;
-right: 13rem;
-top: 27rem;
-cursor: pointer;
-font-size: var(--h3-font-size);
+.login .form .pass {
+    position: absolute;
+    right: 13rem;
+    top: 26rem;
+    cursor: pointer;
+    font-size: var(--h3-font-size);
 }
 
 
@@ -50,18 +47,18 @@ font-size: var(--h3-font-size);
 }
 
 
-.login .form button{
+.login .form button {
     margin-top: 2rem;
 }
 
-.login .form .google{
+.login .form .google {
     text-align: center;
     padding: 2rem 0;
 }
 
-.login .form .google  h4{
+.login .form .google h4 {
     margin-top: 3rem;
-   font-size: var(--h1-font-size);
+    font-size: var(--h1-font-size);
     padding: 1rem 0;
 
 }
@@ -69,8 +66,7 @@ font-size: var(--h3-font-size);
 .login .form .google span {
     font-size: var(--h1-font-size);
 
-padding: 1.5rem;
-border-radius: 10rem;
-cursor: pointer;
+    padding: 1.5rem;
+    border-radius: 10rem;
+    cursor: pointer;
 }
-

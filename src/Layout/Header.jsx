@@ -14,8 +14,6 @@ export default function Header() {
 
   return (
     <header>
-
-      
       <div className="header--title">
         <Link to="/" className="link">
           <FaCarCrash />
@@ -66,7 +64,7 @@ export default function Header() {
 
       <div className="header--profile">
         {user && (
-          <div className="user" data-tip={user.email}>
+          <div className="user">
             <img src={user.photoURL} alt="" />
             <span class="tooltiptext">{user.displayName}</span>
           </div>
@@ -76,8 +74,6 @@ export default function Header() {
           <FaStream />
         </span> */}
       </div>
-
-
     </header>
   );
 }

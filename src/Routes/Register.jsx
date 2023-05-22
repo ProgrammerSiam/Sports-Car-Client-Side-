@@ -53,7 +53,6 @@ export default function Register() {
           const user = userCredential.user;
           setSuccess("User has been created successfully");
           userProfile(user, name);
-          emailVerification(user);
           console.log(user);
         })
         .catch((error) => {
@@ -62,12 +61,11 @@ export default function Register() {
     }
   };
 
-
   //update user profile => name,photo
   const userProfile = (user, name) => {
     updateProfile(user, {
       displayName: name,
-      photoURL: "https://www.w3schools.com/w3images/avatar2.png",
+      // photoURL: "https://www.w3schools.com/w3images/avatar2.png",
     })
       .then(() => {
         console.log("name updated");
@@ -76,17 +74,6 @@ export default function Register() {
         console.log(error.message);
       });
   };
-
-//   //email verification
-//   const emailVerification = (user) => {
-//     sendEmailVerification(user)
-//       .then(() => {
-//         alert("confirm your email verified");
-//       })
-//       .catch((error) => {
-//         console.log(error.message);
-//       });
-//   };
 
   return (
     <section className="register">

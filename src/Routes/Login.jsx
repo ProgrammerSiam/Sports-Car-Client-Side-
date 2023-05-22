@@ -131,7 +131,7 @@ export default function Login() {
           <span onClick={handleResetPassword}>reset your password</span>
         </div> */}
         <p>
-          Already have an account? <Link to="/login">login here</Link>
+          Already have an account? <Link to="/register">register here</Link>
         </p>
 
         <button className="button" onClick={login}>
