@@ -22,7 +22,7 @@ export default function Featured() {
             src={"https://i.ibb.co/Mfr54vj/pexels-mike-bird-97353.jpg"}
             alt=""
           />
-        </div>{" "}
+        </div>
         <div className="box">
           <img
             src={"https://i.ibb.co/4RgBsjh/pexels-markus-spiske-242200.jpg"}
@@ -36,13 +36,13 @@ export default function Featured() {
             }
             alt=""
           />
-        </div>{" "}
+        </div>
         <div className="box">
           <img
             src={"https://i.ibb.co/XbdG8sP/pexels-mike-bird-381228.jpg"}
             alt=""
           />
-        </div>{" "}
+        </div>
         <div className="box">
           <img
             src={"https://i.ibb.co/xj96Vrd/pexels-mike-bird-97355.jpg"}
