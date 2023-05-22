@@ -3,27 +3,25 @@ import React, { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import { useContext } from "react";
 import { AuthContext } from "../../../Features/Auth/AuthProvider";
-// import { AuthContext } from '../../AuthProvaider/Provaider';
+
 import AddedToysList from "./../../../Components/Component/AddedToysLIst/AddedToysList";
 
-import '../style/mytoy.css'
+import "../style/mytoy.css";
 
 const My_toys = () => {
   const { user } = useContext(AuthContext);
-  // console.log(user?.email)
+
   const [addedtoys, setAddedtoys] = useState([]);
 
   const url = `http://localhost:5000/mytoys?email=${user?.email}`;
-console.log(addedtoys)
+  console.log(addedtoys);
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => setAddedtoys(data));
   }, [url]);
 
-  // console.log(addedtoys)
   const deleteItems = (_id) => {
-    console.log("delete");
     Swal.fire({
       title: "Are you sure?",
       text: "You won't be able to revert this!",
@@ -39,11 +37,9 @@ console.log(addedtoys)
         })
           .then((res) => res.json())
           .then((data) => {
-            console.log(data);
-
             if (data.deletedCount > 0) {
               Swal.fire("Deleted!", "Your file has been deleted.", "success");
-              console.log(_id);
+
               const remainingToys = addedtoys.filter((toy) => toy._id !== _id);
               setAddedtoys(remainingToys);
             }
