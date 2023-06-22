@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import AddedToysList from "./../../../Components/Component/AddedToysLIst/AddedToysList";
+
 import Swal from "sweetalert2";
 import { useContext } from "react";
 import { AuthContext } from "../../../Features/Auth/AuthProvider";
@@ -13,7 +13,7 @@ const My_toys = () => {
 
   const [addedtoys, setAddedtoys] = useState([]);
 
-  const url = `http://localhost:5000/mytoys?email=${user?.email}`;
+  const url = `https://server-side-qthr3ewfi-mehediinfo10101-gmailcom.vercel.app/mytoys?email=${user?.email}`;
   console.log(addedtoys);
   useEffect(() => {
     fetch(url)
@@ -32,9 +32,12 @@ const My_toys = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/mytoys/${_id}`, {
-          method: "DELETE",
-        })
+        fetch(
+          `https://server-side-qthr3ewfi-mehediinfo10101-gmailcom.vercel.app/mytoys/${_id}`,
+          {
+            method: "DELETE",
+          }
+        )
           .then((res) => res.json())
           .then((data) => {
             if (data.deletedCount > 0) {

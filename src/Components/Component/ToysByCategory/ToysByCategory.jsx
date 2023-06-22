@@ -9,7 +9,9 @@ const ToysByCategory = () => {
     setActiveTab(tabName);
   };
   useEffect(() => {
-    fetch(`http://localhost:5000/toyByCategory/${activeTab}`)
+    fetch(
+      `https://server-side-qthr3ewfi-mehediinfo10101-gmailcom.vercel.app/toyByCategory/${activeTab}`
+    )
       .then((res) => res.json())
       .then((result) => {
         setSelectcategory(result);

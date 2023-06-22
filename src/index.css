@@ -1,6 +1,4 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
+
 
 /*=============== BASE ===============*/
 
@@ -13,7 +11,7 @@
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
     text-transform: capitalize;
-    /* transition: 0.3s ease; */
+    transition: 0.3s ease;
 
 }
 

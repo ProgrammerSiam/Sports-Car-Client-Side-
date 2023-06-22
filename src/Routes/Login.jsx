@@ -1,5 +1,6 @@
 import React, { useState, useRef, useContext } from "react";
-
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
 import "./Style/login.css";
 import {
@@ -33,28 +34,23 @@ export default function Login() {
   const login = () => {
     loginUser(email, password)
       .then((userCredential) => {
-        // Signed in
         const user = userCredential.user;
         setData(user);
-        console.log(user);
+        toast("Login Successful");
       })
       .catch((error) => {
         console.log(error.message);
       });
   };
 
-  //sin
-
   const handleGoogleLogin = () => {
-    console.log("active google");
     googleLogin()
       .then((result) => {
-        console.log(result.user);
+          toast("Login Successful");
       })
       .catch((err) => console.log(err));
   };
 
-  //show/hidden password
   const handleToggle = () => {
     if (type === "password") {
       setType("text");
@@ -64,38 +60,6 @@ export default function Login() {
       setIcon(FaEyeSlash);
     }
   };
-
-  // //reset password
-  // const emailRef = useRef();
-
-  // const handleResetPassword = () => {
-  //   const email = emailRef.current.value;
-
-  //   console.log(email);
-  //   if (!email) {
-  //     alert("plz provide your email address");
-  //   }
-
-  //   sendPasswordResetEmail(auth, email)
-  //     .then(() => {
-  //       alert("check your email");
-  //     })
-  //     .catch((error) => {
-  //       console.log(error.message);
-  //     });
-  // };
-
-  // //login/logout
-
-  // const logout = () => {
-  //   signOut(auth)
-  //     .then(() => {
-  //       setData("");
-  //     })
-  //     .catch((error) => {
-  //       console.log(error.message);
-  //     });
-  // };
 
   return (
     <section className="login">

@@ -28,13 +28,16 @@ const UpdateData = () => {
   const onSubmit = (data) => {
     console.log(data);
 
-    fetch(`http://localhost:5000/updateJob/${_id}`, {
-      method: "PUT",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(data),
-    })
+    fetch(
+      `https://server-side-qthr3ewfi-mehediinfo10101-gmailcom.vercel.app/updateJob/${_id}`,
+      {
+        method: "PUT",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(data),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data.modifiedCount);
@@ -43,7 +46,7 @@ const UpdateData = () => {
           navigate("/mytoys");
         }
       });
-  };
+  };                      
 
   return (
     <section className="update--data">

@@ -2,14 +2,18 @@ import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Style/header.css";
 import "./Style/responsive.css";
-
-import { FaCarCrash, FaStream } from "react-icons/fa";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { FaCarCrash } from "react-icons/fa";
 import { AuthContext } from "../Features/Auth/AuthProvider";
 
 export default function Header() {
   const { user, logOut } = useContext(AuthContext);
+
+
   const handleLogOut = () => {
     logOut();
+    toast("Log Out Successful");
   };
 
   return (

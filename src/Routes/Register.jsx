@@ -1,13 +1,7 @@
 import React, { useContext } from "react";
 import { useState } from "react";
 import "./Style/register.css";
-import app from "../Features/Config/firebase.config";
-import {
-  getAuth,
-  createUserWithEmailAndPassword,
-  updateProfile,
-  sendEmailVerification,
-} from "firebase/auth";
+import { updateProfile } from "firebase/auth";
 import { Link } from "react-router-dom";
 import { AuthContext } from "./../Features/Auth/AuthProvider";
 
@@ -21,9 +15,8 @@ export default function Register() {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
 
-  const auth = getAuth(app);
+  const userData = { name, email, password };
 
-  //register
   const submit = () => {
     setError("");
     setSuccess("");
@@ -46,14 +39,15 @@ export default function Register() {
       setError("Please add at least 6 characters in your password");
       return;
     } else {
-      //context see this
       createUser(email, password)
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
+
           setSuccess("User has been created successfully");
           userProfile(user, name);
-          console.log(user);
+
+          console.log(userData);
         })
         .catch((error) => {
           console.log(error.message);
